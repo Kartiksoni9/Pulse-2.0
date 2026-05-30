@@ -58,9 +58,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
-    pointer-events: none;
     display: block;
-    background: transparent;
+    /* pointer-events intentionally NOT set — canvas fills bg, clicks pass through to UI via document listener */
+    pointer-events: none;
 }
 
 
